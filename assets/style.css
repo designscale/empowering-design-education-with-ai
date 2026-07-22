@@ -1,23 +1,25 @@
 /* Empowering Design Education with AI — book site */
 
 :root {
-  --paper: #faf7f1;
-  --paper-warm: #f3ede1;
-  --ink: #241f1a;
-  --ink-soft: #55493d;
-  --ink-faint: #8a7c6a;
-  --rule: #ddd2bf;
-  --accent: #9c3d2e;
-  --accent-soft: #c97b5f;
-  --sidebar-bg: #211c16;
-  --sidebar-ink: #ece3d4;
-  --sidebar-ink-faint: #a99c88;
-  --sidebar-active: #c97b5f;
+  --paper: #ffffff;
+  --paper-warm: #f1f3f6;
+  --ink: #1b2537;
+  --ink-soft: #4b5768;
+  --ink-faint: #8993a3;
+  --rule: #dde2e8;
+  --accent: #1f3a5f;
+  --accent-soft: #4a6b93;
+  --sidebar-bg: #101a2c;
+  --sidebar-ink: #e8ecf2;
+  --sidebar-ink-faint: #8593ab;
+  --sidebar-active: #7ba3d6;
   --serif: Georgia, "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif;
   --sidebar-w: 300px;
 }
 
 * { box-sizing: border-box; }
+
+a, button { -webkit-tap-highlight-color: transparent; }
 
 html, body {
   margin: 0;
@@ -25,6 +27,12 @@ html, body {
   background: var(--paper);
   color: var(--ink);
   font-family: var(--serif);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none;
 }
 
 body {
@@ -48,6 +56,12 @@ body {
   top: 0;
   height: 100vh;
   overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
 }
 
 .sidebar-title {
@@ -55,7 +69,7 @@ body {
   text-decoration: none;
   margin-bottom: 2rem;
   padding-bottom: 1.5rem;
-  border-bottom: 1px solid rgba(236, 227, 212, 0.18);
+  border-bottom: 1px solid rgba(232, 236, 242, 0.16);
 }
 
 .sidebar-book-title {
@@ -114,11 +128,11 @@ body {
 }
 
 .navlink:hover {
-  background: rgba(236, 227, 212, 0.08);
+  background: rgba(232, 236, 242, 0.07);
 }
 
 .navlink.active {
-  background: rgba(201, 123, 95, 0.18);
+  background: rgba(123, 163, 214, 0.2);
   color: #fff;
   font-weight: 600;
 }
@@ -133,7 +147,7 @@ body {
   font-size: 0.6rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  background: rgba(236, 227, 212, 0.12);
+  background: rgba(232, 236, 242, 0.1);
   color: var(--sidebar-ink-faint);
   padding: 0.12rem 0.4rem;
   border-radius: 999px;
@@ -145,7 +159,7 @@ body {
   font-size: 0.6rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  background: rgba(201, 123, 95, 0.22);
+  background: rgba(123, 163, 214, 0.22);
   color: var(--sidebar-active);
   padding: 0.12rem 0.4rem;
   border-radius: 999px;
